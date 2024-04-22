@@ -1,0 +1,22 @@
+
+  
+span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 3px;
+  background-color: lightgray;
+}
+
+span.message {
+  background-color: transparent;
+  width: 600px;
+}
+
+span.inAnswer {
+    background-color: orange;
+}
+
+span.correct {
+    background-color: lightgreen;
+}
