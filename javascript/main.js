@@ -1,4 +1,3 @@
-console.log("from main.js");
 const wordle = document.querySelector("wordle");
 let i = 0;
 while (i < 6) {
@@ -22,10 +21,17 @@ console.log(answerWord);
 let spanN = 0;
 let divN = 0;
 let testWord = "";
-document.addEventListener("keydown", (event) => {
+/*
+const keyboardDiv = document.querySelector("#keyboard-div");
+keyboardDiv.addEventListener("click", (event) => {
+    console.log(event.target.innerText);
+});
+*/
+const keyboardDiv = document.querySelector("#keyboard-div");
+keyboardDiv.addEventListener("click", (event) => {
   const spanToModify = document.querySelector("#div" + divN + "-span" + spanN);
-  spanToModify.innerHTML = event.key;
-  testWord = testWord + event.key;
+  spanToModify.innerHTML = event.target.innerText;
+  testWord = testWord + event.target.innerText;
   console.log(testWord);
   if (spanN === 4) {
     const messageSpan = document.querySelector("#div" + divN + "-span5");

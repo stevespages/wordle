@@ -1,0 +1,28 @@
+#keyboard-div {
+    width: 400px;
+}
+
+#top-row {
+    display: grid;
+    grid-template-columns: repeat(10, 2fr);
+    padding: 7px;
+}
+#middle-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 1fr;
+    padding: 7px;
+}
+#bottom-row {
+    display: grid;
+    grid-template-columns: 3fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 3fr;
+    padding: 7px;
+}
+
+#keyboard-div span {
+    display: inline-block;
+    padding: 5px;
+}
+
+span.empty {
+    background-color: transparent;
+}
