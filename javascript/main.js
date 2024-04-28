@@ -55,6 +55,12 @@ function displayLetter(event) {
   spanN++;
 }
 
+const giveUpBtn = document.querySelector("#give-up-btn");
+const answerDiv = document.querySelector("#answer-div");
+giveUpBtn.addEventListener("click", () => {
+  answerDiv.innerHTML = "<p>The answer is <a href='https://en.wiktionary.org/wiki/" + answerWord + "#Spanish'>" + answerWord + "</a></p>";
+})
+
 const keyboardDiv = document.querySelector("#keyboard-div");
 keyboardDiv.addEventListener("click", (event) => {
   //const spanToModify = document.querySelector("#div" + divN + "-span" + spanN);
