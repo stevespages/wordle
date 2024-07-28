@@ -1,12 +1,17 @@
-
-  
-span {
+wordle span {
   display: inline-block;
   width: 20px;
   height: 20px;
   margin: 3px;
   background-color: lightgray;
+  font-size: large;
 }
+/*
+#answer-div {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+*/
 
 span.message {
   background-color: transparent;
@@ -19,4 +24,8 @@ span.inAnswer {
 
 span.correct {
     background-color: lightgreen;
+}
+
+#give-up-btn {
+  margin-top: 20px;
 }

@@ -62,7 +62,8 @@ giveUpBtn.addEventListener("click", () => {
 })
 
 const keyboardDiv = document.querySelector("#keyboard-div");
-keyboardDiv.addEventListener("click", (event) => {
+keyboardDiv.addEventListener("pointerdown", (event) => {
+  event.target.style.color = "red";
   //const spanToModify = document.querySelector("#div" + divN + "-span" + spanN);
   const newLetter = event.target.innerText;
   //spanToModify.innerHTML = newLetter;
@@ -243,6 +244,15 @@ keyboardDiv.addEventListener("click", (event) => {
     actualWords = [];
     spanN = 0;
   }
+});
+
+const keyboardDivSpans = document.querySelectorAll("#keyboard-div span")
+
+keyboardDiv.addEventListener("pointerup", (event) => {
+  console.log(event.target.innerText);
+  keyboardDivSpans.forEach((span) => {
+      span.style.color = "black";
+  })
 });
 
 // if you go beyond 6 attempts you get: "Uncaught TypeError: spanToModify is null"

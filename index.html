@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script type="module" src="javascript/main.js"></script>
-    <link href="css/css.main" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
     <link href="css/keyboard.css" rel="stylesheet" />
+    <!--
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    -->
 </head>
 <body>
     <wordle></wordle>
-    <button id="give-up-btn">Give up?</button>
     <div id="answer-div"></div>
+    <!-- old
     <div id="keyboard-div">
         <div id="top-row">
             <span>q</span>
@@ -50,5 +53,60 @@
             <span class="empty"></span>
         </div>
     </div>
+    -->
+    <div id="keyboard-div">
+        <!--
+        <div id="top-row">
+            <span style="transform: rotate(-60deg) translate(0, 0);">q</span>
+            <span style="transform: rotate(-45deg) translate(0,-60px);">w</span>
+            <span style="transform: rotate(-30deg) translate(0, -80px);">e</span>
+            <span style="transform: rotate(-15deg) translate(0, -90px);">r</span>
+            <span style="transform: rotate(0deg) translate(0, -120px);">t</span>
+            <span style="transform: rotate(0deg) translate(0, -120px);">y</span>
+            <span style="transform: rotate(15deg) translate(0, -60px);">u</span>
+            <span style="transform: rotate(30deg) translate(0,-40px);">i</span>
+            <span style="transform: rotate(45deg) translate(0, -20px);">o</span>
+            <span style="transform: rotate(60deg) translate(0, 0);">p</span>
+        </div>
+        -->
+        <div id="top-row">
+            <span style="transform: translate(0, 0);">q</span>
+            <span style="transform: translate(0,-15px);">w</span>
+            <span style="transform: translate(0, -30px);">e</span>
+            <span style="transform: translate(0, -45px);">r</span>
+            <span style="transform: translate(0, -60px);">t</span>
+            <span style="transform: translate(0, -60px);">y</span>
+            <span style="transform: translate(0, -45px);">u</span>
+            <span style="transform: translate(0,-30px);">i</span>
+            <span style="transform: translate(0, -15px);">o</span>
+            <span style="transform: translate(0, 0);">p</span>
+        </div>
+    
+        <div id="middle-row">
+            <span class="empty"></span>
+            <span style="transform: translate(0, 0);">a</span>
+            <span style="transform: translate(0, -15px);">s</span>
+            <span style="transform: translate(0, -30px);">d</span>
+            <span style="transform: translate(0, -45px);">f</span>
+            <span style="transform: translate(0, -60px);">g</span>
+            <span style="transform: translate(0, -45px);">h</span>
+            <span style="transform: translate(0, -30px);">j</span>
+            <span style="transform: translate(0, -15px);">k</span>
+            <span style="transform: translate(0, 0);">l</span>
+            <span class="empty"></span>
+        </div>
+        <div id="bottom-row">
+            <span class="empty"></span>
+            <span style="transform: translate(0, 0);">z</span>
+            <span style="transform: translate(0, -15px);">x</span>
+            <span style="transform: translate(0, -30px);">c</span>
+            <span style="transform: translate(0, -45px);">v</span>
+            <span style="transform: translate(0, -30px);">b</span>
+            <span style="transform: translate(0, -15px);">n</span>
+            <span style="transform: translate(0, 0);">m</span>
+            <span class="empty"></span>
+        </div>
+    </div>
+    <button id="give-up-btn">Give up?</button>
 </body>
 </html>

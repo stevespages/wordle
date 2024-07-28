@@ -1,8 +1,27 @@
+/* old
 #keyboard-div {
-    width: 400px;
+    max-width: 700px;
+    font-size: xx-large;
 }
 
 #top-row {
+    display: grid;
+    grid-template-columns: repeat(10, 2fr);
+    padding-bottom: 14px;
+}
+#middle-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 1fr;
+    padding-bottom: 14px;
+}
+#bottom-row {
+    display: grid;
+    grid-template-columns: 3fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 3fr;
+}
+*/
+
+#top-row {
+    margin-top: 40px;
     display: grid;
     grid-template-columns: repeat(10, 2fr);
     padding: 7px;
@@ -10,19 +29,35 @@
 #middle-row {
     display: grid;
     grid-template-columns: 1fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 1fr;
-    padding: 7px;
 }
 #bottom-row {
     display: grid;
     grid-template-columns: 3fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 3fr;
-    padding: 7px;
 }
 
-#keyboard-div span {
-    display: inline-block;
-    padding: 5px;
+#keyboard-div {
+    max-width: 800px;
+    font-size: x-large;
 }
 
-span.empty {
-    background-color: transparent;
+#top-row {
+    display: grid;
+    grid-template-columns: repeat(10, 2fr);
+    padding-bottom: 10px;
 }
+#middle-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 1fr;
+    padding-bottom: 10px;
+}
+#bottom-row {
+    display: grid;
+    grid-template-columns: 3fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 3fr;
+}
+
+/*
+span {
+  display: flex;
+  justify-content: center;
+}
+*/
