@@ -1,0 +1,33 @@
+#home_dWordle_section section span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 1px;
+  background-color: lightgray;
+  font-size: large;
+}
+/*
+#answer-div {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+*/
+
+#home_dWordle_section section span.message {
+  display: inline;
+  background-color: transparent;
+  color: green;
+}
+
+#home_dWordle_section section span.inAnswer {
+    background-color: orange;
+}
+
+#home_dWordle_section section span.correct {
+    background-color: lightgreen;
+}
+
+#home_dAnswer_p {
+  font-size: large;
+  color: green;
+}

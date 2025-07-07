@@ -1,0 +1,6 @@
+.row-of-chars {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  font-size: large;
+  margin-bottom:1em;
+}
